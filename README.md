@@ -1,50 +1,52 @@
-# Welcome to your Expo app 👋
+# CrudApp
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+CrudApp is a cross-platform mobile application built using React Native and Expo.
 
-## Get started
+## 🚀 Tech Stack
+- **Framework:** React Native, Expo
+- **Routing:** Expo Router (File-based routing)
+- **Language:** TypeScript
+- **UI/Styling:** React Native Web, Expo Vector Icons
+- **Animations:** React Native Reanimated, Gesture Handler
 
-1. Install dependencies
+## 🛠️ Project Setup
 
+1. **Prerequisites**
+   - Node.js installed on your machine
+   - `npm` or `yarn` package manager
+   - Expo Go app installed on your physical device (for testing), or an Android Emulator/iOS Simulator set up on your machine.
+
+2. **Installation**
+   Clone the repository, navigate to the directory, and install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. **Running the App**
+   Start the Expo development server:
    ```bash
    npx expo start
    ```
+   - Press `a` to open the app on an Android Emulator.
+   - Press `i` to open the app on an iOS Simulator.
+   - Scan the QR code shown in the terminal using the Expo Go app on your mobile device.
 
-In the output, you'll find options to open the app in a
+## 📡 API Details
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+*(Note: These are placeholder API details. Please update them to reflect your actual backend configuration.)*
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Base URL:** `http://localhost:8000/api`
+- **Endpoints:**
+  - `GET /items` - Retrieve a list of items.
+  - `GET /items/{id}` - Retrieve a single item by ID.
+  - `POST /items` - Create a new item.
+  - `PUT /items/{id}` - Update an existing item.
+  - `DELETE /items/{id}` - Delete an item.
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 📂 Project Structure
+- `app/` - Application screens and routes (managed by Expo Router).
+- `assets/` - Static assets like images and fonts.
+- `components/` - Reusable UI components.
+- `constants/` - App-wide constants (e.g., colors, layout sizing).
+- `hooks/` - Custom React hooks for shared logic.
+- `scripts/` - Helpful utility scripts.
